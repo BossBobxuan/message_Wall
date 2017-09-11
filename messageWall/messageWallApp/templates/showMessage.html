@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我要上墙</title>	
+	<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel="stylesheet">
+	<script src="/static/js/Ajax.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+			{%for message in messageList%}
+			<div class="row-fluid" >
+					<div class="span12" >
+						<div class="col">
+								<p class="text-center">
+										{{message.messageText}}
+								</p>
+						</div>
+						
+					</div>
+				</div>
+			
+			{%endfor%}
+			
+	</div>
+
+
+</body>
+</html>

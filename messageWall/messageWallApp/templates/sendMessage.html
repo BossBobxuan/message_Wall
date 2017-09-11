@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我要上墙</title>	
+	<link rel="stylesheet" href="/static/css/style.css"><!--#在引用时，切记在第一个文件夹前加/否则无效，无需进行其他设置-->
+	<link rel="stylesheet" href="/static/dist/style/weui.css">
+	
+</head>
+<body>
+	<h1 style="text-align:center;">欢迎参加电子学院迎新晚会</h1>
+	<h2 id="title"></h2>
+	<br><br><br>
+	<form  method="post" accept-charset="utf-8" >
+    
+		
+        <div class="weui_cells weui_cells_form">
+			
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">{{form.messageText.label_tag}}</label></div>
+                <div class="weui_cell_bd weui_cell_primary" placeholder="请勿超过10个字">
+                    {{form.messageText}}
+                </div>
+            </div>
+          
+            
+           
+         </div>
+     
+     <input type="submit" name="ok" value="发送"  id="sure" class="weui_btn weui_btn_primary" >
+     </form>  
+    
+
+
+</body>
+</html>
